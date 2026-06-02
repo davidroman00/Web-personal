@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--bg-color);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3vw;
+}
+
+.leftHeaderMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5vw;
+}
+
+.signature {
+  width: 7vw;
+  height: 7vw;
+  min-width: 75px;
+  min-height: 75px;
+  background-color: var(--detail-color);
+  text-align: center;
+  align-content: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  margin-right: 4vw;
+
+  & button {
+    width: 6vw;
+    font-size: var(--text-size);
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    border-bottom: 2.5px solid var(--bg-color);
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: var(--text-weight);
+    padding-bottom: 2vh;
+
+    &.active {
+      border-bottom: 2.5px solid var(--text-color);
+    }
+  }
+}

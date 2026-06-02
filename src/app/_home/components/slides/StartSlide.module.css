@@ -1,0 +1,6 @@
+@media (max-width: 500px) {
+  .text {
+    max-width: 60%;
+    text-align: center;
+  }
+}

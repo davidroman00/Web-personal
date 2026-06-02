@@ -1,0 +1,11 @@
+.skillList {
+  --cols: 6;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: 1vh;
+  margin-top: 2vh;
+
+  @media (max-width: 500px) {
+    --cols: 3;
+  }
+}

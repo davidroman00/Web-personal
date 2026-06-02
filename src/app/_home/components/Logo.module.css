@@ -1,0 +1,18 @@
+.logoContainer {
+  position: relative;
+  width: 5.25vw;
+  height: 5.25vw;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+.image {
+  object-fit: contain;
+  padding: 5%;
+}

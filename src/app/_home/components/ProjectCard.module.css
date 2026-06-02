@@ -1,0 +1,33 @@
+.cardContainer {
+  position: relative;
+  height: 100%;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.description {
+  & a {
+    color: var(--detail-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--detail-color);
+  }
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .cardContainer {
+    width: 27.5vw;
+  }
+}
+@media (max-width: 500px) {
+  .cardContainer {
+    width: 50vw;
+  }
+}

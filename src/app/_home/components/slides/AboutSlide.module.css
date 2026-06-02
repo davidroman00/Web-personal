@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  padding: 15%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  & p {
+    height: 100%;
+    width: 47.5%;
+  }
+}
+
+.mobileAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.aboutTitle {
+  text-align: right;
+  margin-bottom: 1vh;
+}
+
+.aboutText {
+  text-align: left;
+  align-items: flex-end;
+
+  & a {
+    color: var(--detail-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--detail-color);
+  }
+}
+
+@media (min-width: 501px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 7.5%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    padding: 15%;
+  }
+}

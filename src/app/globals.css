@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #05022b;
+  --text-color: #f6f6f6;
+  --detail-color: #cc0b0b;
+  --title-size: clamp(2.125rem, 1rem + 1.5vw, 3.5rem);
+  --subtitle-size: clamp(1rem, 0.7rem + 0.5vw, 1.75rem);
+  --text-size: clamp(0.785rem, 0.7rem + 0.2vw, 1.125rem);
+  --text-weight: 200;
+  --title-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/Fonts/InterTight-Normal.ttf") format("ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  font-family: "Inter", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+@layer defaults {
+  .title {
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+    color: var(--text-color);
+  }
+
+  .subtitle {
+    font-weight: var(--text-weight);
+    font-size: var(--subtitle-size);
+    color: var(--text-color);
+  }
+
+  .text {
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+
+  .detailText {
+    color: var(--detail-color);
+  }
+
+  .bold {
+    font-weight: var(--title-weight);
+  }
+}
